@@ -1,0 +1,23 @@
+{
+  "name": "@axia-js/x-bundle",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A bundler helper",
+  "main": "index.js",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/common",
+  "bugs": "https://github.com/axia-js/common/issues",
+  "homepage": "https://github.com/axia-js/common/tree/master/packages/x-bundle#readme",
+  "dependencies": {
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "buffer-es6": "^4.9.3"
+  }
+}

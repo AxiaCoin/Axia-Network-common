@@ -1,0 +1,34 @@
+{
+  "repository": "https://github.com/axia-js/common",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "license": "Apache-2",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "resolutions": {
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "axia-dev-build-ts",
+    "build:release": "axia-ci-ghact-build",
+    "build:rollup": "axia-exec-rollup --config",
+    "lint": "axia-dev-run-lint",
+    "clean": "axia-dev-clean-build",
+    "networks:crosscheck": "axia-dev-run-test packages/networks/src/crosscheck",
+    "networks:sync": "node packages/networks/scripts/fromAxlib.mjs",
+    "postinstall": "axia-dev-yarn-only",
+    "test": "axia-dev-run-test --coverage --runInBand --testPathIgnorePatterns crosscheck --testPathIgnorePatterns toMiniSecretCmp",
+    "test:mnemonicCmp": "axia-dev-run-test packages/util-crypto/src/mnemonic/toMiniSecretCmp.spec.ts",
+    "test:one": "axia-dev-run-test --runInBand"
+  },
+  "devDependencies": {
+    "@axia-js/dev": "0.1.0",
+    "@axia-js/ts": "0.1.0",
+    "@babel/core": "^7.15.5",
+    "@types/ed2curve": "^0.2.2",
+    "@types/jest": "^27.0.1"
+  },
+  "version": "0.1.0",
+  "packageManager": "yarn@3.0.1"
+}

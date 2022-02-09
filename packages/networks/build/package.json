@@ -1,0 +1,53 @@
+{
+  "name": "@axia-js/networks",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A list of all available Axlib networks and their applicable prefixes",
+  "main": "index.js",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": "github:axia-js/common",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "bugs": "https://github.com/axia-js/common/issues",
+  "homepage": "https://github.com/axia-js/common/tree/master/packages/networks#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.15.4"
+  },
+  "devDependencies": {
+    "@axia-js/util": "0.1.0",
+    "@axia-js/x-fetch": "0.1.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./defaults": {
+      "require": "./defaults.cjs",
+      "default": "./defaults.js"
+    },
+    "./interfaces": {
+      "require": "./interfaces.cjs",
+      "default": "./interfaces.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./README.md": "./README.md",
+    "./axlib": {
+      "require": "./axlib.cjs",
+      "default": "./axlib.js"
+    },
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    }
+  }
+}

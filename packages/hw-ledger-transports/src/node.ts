@@ -1,0 +1,17 @@
+// Copyright 2017-2021 @axia-js/hw-ledger authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+
+import type Transport from '@ledgerhq/hw-transport';
+import type { TransportDef } from './types';
+
+import LedgerHid from '@ledgerhq/hw-transport-node-hid-singleton';
+
+export { packageInfo } from './packageInfo';
+
+export const transports: TransportDef[] = [
+  {
+    create: (): Promise<Transport> =>
+      LedgerHid.create(),
+    type: 'hid'
+  }
+];

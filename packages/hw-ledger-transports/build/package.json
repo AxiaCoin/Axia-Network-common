@@ -1,0 +1,65 @@
+{
+  "name": "@axia-js/hw-ledger-transports",
+  "version": "0.1.0",
+  "type": "module",
+  "repository": "github:axia-js/common",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "main": "node.js",
+  "browser": "browser.js",
+  "react-native": "react-native.js",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "@ledgerhq/hw-transport": "^6.7.0",
+    "@ledgerhq/hw-transport-webhid": "^6.7.0",
+    "@ledgerhq/hw-transport-webusb": "^6.7.0"
+  },
+  "optionalDependencies": {
+    "@ledgerhq/hw-transport-node-hid-singleton": "^6.7.0"
+  },
+  "exports": {
+    ".": {
+      "browser": {
+        "require": "./browser.cjs",
+        "default": "./browser.js"
+      },
+      "node": {
+        "require": "./node.cjs",
+        "default": "./node.js"
+      },
+      "react-native": {
+        "require": "./react-native.cjs",
+        "default": "./react-native.js"
+      }
+    },
+    "./browser": {
+      "require": "./browser.cjs",
+      "default": "./browser.js"
+    },
+    "./index.d.ts": "./node.d.ts",
+    "./node": {
+      "require": "./node.cjs",
+      "default": "./node.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./react-native": {
+      "require": "./react-native.cjs",
+      "default": "./react-native.js"
+    },
+    "./README.md": "./README.md",
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    }
+  }
+}

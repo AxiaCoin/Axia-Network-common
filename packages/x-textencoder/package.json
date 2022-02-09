@@ -1,0 +1,24 @@
+{
+  "name": "@axia-js/x-textencoder",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A TextDecoder replacement",
+  "browser": "browser.js",
+  "main": "node.js",
+  "react-native": "react-native.js",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/common",
+  "bugs": "https://github.com/axia-js/common/issues",
+  "homepage": "https://github.com/axia-js/common/tree/master/packages/x-textencoder#readme",
+  "dependencies": {
+    "@axia-js/x-global": "0.1.0",
+    "@babel/runtime": "^7.15.4"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@axia-js/hw-ledger",
+  "version": "0.1.0",
+  "type": "module",
+  "repository": "github:axia-js/common",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "@axia-js/hw-ledger-transports": "0.1.0",
+    "@axia-js/util": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "@zondax/ledger-axlib": "^0.18.0"
+  }
+}

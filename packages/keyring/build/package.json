@@ -1,0 +1,102 @@
+{
+  "name": "@axia-js/keyring",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "Keyring management",
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": "github:axia-js/common",
+  "bugs": "https://github.com/axia-js/common/issues",
+  "homepage": "https://github.com/axia-js/common/tree/master/packages/keyring#readme",
+  "dependencies": {
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2",
+    "@babel/runtime": "^7.15.4"
+  },
+  "peerDependencies": {
+    "@axia-js/util": "0.1.0",
+    "@axia-js/util-crypto": "0.1.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./defaults": {
+      "require": "./defaults.cjs",
+      "default": "./defaults.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./keyring": {
+      "require": "./keyring.cjs",
+      "default": "./keyring.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./pair": {
+      "require": "./pair/index.cjs",
+      "default": "./pair/index.js"
+    },
+    "./pair/decode": {
+      "require": "./pair/decode.cjs",
+      "default": "./pair/decode.js"
+    },
+    "./pair/defaults": {
+      "require": "./pair/defaults.cjs",
+      "default": "./pair/defaults.js"
+    },
+    "./pair/encode": {
+      "require": "./pair/encode.cjs",
+      "default": "./pair/encode.js"
+    },
+    "./pair/nobody": {
+      "require": "./pair/nobody.cjs",
+      "default": "./pair/nobody.js"
+    },
+    "./pair/toJson": {
+      "require": "./pair/toJson.cjs",
+      "default": "./pair/toJson.js"
+    },
+    "./pair/types": {
+      "require": "./pair/types.cjs",
+      "default": "./pair/types.js"
+    },
+    "./pairs": {
+      "require": "./pairs.cjs",
+      "default": "./pairs.js"
+    },
+    "./README.md": "./README.md",
+    "./testing": {
+      "require": "./testing.cjs",
+      "default": "./testing.js"
+    },
+    "./testingPairs": {
+      "require": "./testingPairs.cjs",
+      "default": "./testingPairs.js"
+    },
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    }
+  }
+}

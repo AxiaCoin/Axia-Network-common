@@ -1,0 +1,36 @@
+{
+  "extends": "@axia-js/dev/config/tsconfig.json",
+  "exclude": [
+    "build/**/*",
+    "**/build/**/*"
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@axia-js/hw-ledger": [ "packages/ledger/src" ],
+      "@axia-js/hw-ledger/*": [ "packages/ledger/src/*" ],
+      "@axia-js/hw-ledger-transports": [ "packages/hw-ledger-transports/src/browser" ],
+      "@axia-js/hw-ledger-transports/*": [ "packages/hw-ledger-transports/src/browser" ],
+      "@axia-js/keyring": [ "packages/keyring/src" ],
+      "@axia-js/keyring/*": [ "packages/keyring/src/*" ],
+      "@axia-js/networks": [ "packages/networks/src" ],
+      "@axia-js/networks/*": [ "packages/networks/src/*" ],
+      "@axia-js/util-crypto": [ "packages/util-crypto/src" ],
+      "@axia-js/util-crypto/*": [ "packages/util-crypto/src/*" ],
+      "@axia-js/util": [ "packages/util/src" ],
+      "@axia-js/util/*": [ "packages/util/src/*" ],
+      "@axia-js/x-bundle/*": [ "packages/x-bundle/src/*" ],
+      "@axia-js/x-fetch": [ "packages/x-fetch/src/browser" ],
+      "@axia-js/x-global": [ "packages/x-global/src" ],
+      "@axia-js/x-randomvalues": [ "packages/x-randomvalues/src/browser" ],
+      "@axia-js/x-textdecoder": [ "packages/x-textdecoder/src/browser" ],
+      "@axia-js/x-textencoder": [ "packages/x-textencoder/src/browser" ],
+      "@axia-js/x-ws": [ "packages/x-ws/src/browser" ]
+    },
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@axia-js/ts",
+      "./node_modules/@types"
+    ]
+  }
+}

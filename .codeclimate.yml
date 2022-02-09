@@ -1,0 +1,5 @@
+exclude_patterns:
+- "**/*.spec.js"
+- "**/*.spec.ts"
+- "packages/networks/src/axlib.ts"
+- "packages/util/src/is/utf8.ts"

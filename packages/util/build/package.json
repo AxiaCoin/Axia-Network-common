@@ -1,0 +1,442 @@
+{
+  "name": "@axia-js/util",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A collection of useful utilities for @axia",
+  "main": "index.js",
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Sankar boro <sankar.boro@zeeve.io>",
+  "maintainers": [],
+  "contributors": [],
+  "license": "Apache-2.0",
+  "repository": "github:axia-js/common",
+  "bugs": "https://github.com/axia-js/common/issues",
+  "homepage": "https://github.com/axia-js/common/tree/master/packages/util#readme",
+  "dependencies": {
+    "@axia-js/x-textdecoder": "0.1.0",
+    "@axia-js/x-textencoder": "0.1.0",
+    "@babel/runtime": "^7.15.4",
+    "@types/bn.js": "^4.11.6",
+    "bn.js": "^4.12.0",
+    "camelcase": "^6.2.0",
+    "ip-regex": "^4.3.0"
+  },
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "default": "./index.js"
+    },
+    "./array": {
+      "require": "./array/index.cjs",
+      "default": "./array/index.js"
+    },
+    "./array/chunk": {
+      "require": "./array/chunk.cjs",
+      "default": "./array/chunk.js"
+    },
+    "./array/filter": {
+      "require": "./array/filter.cjs",
+      "default": "./array/filter.js"
+    },
+    "./array/flatten": {
+      "require": "./array/flatten.cjs",
+      "default": "./array/flatten.js"
+    },
+    "./array/range": {
+      "require": "./array/range.cjs",
+      "default": "./array/range.js"
+    },
+    "./array/shuffle": {
+      "require": "./array/shuffle.cjs",
+      "default": "./array/shuffle.js"
+    },
+    "./assert": {
+      "require": "./assert.cjs",
+      "default": "./assert.js"
+    },
+    "./bn": {
+      "require": "./bn/index.cjs",
+      "default": "./bn/index.js"
+    },
+    "./bn/bn": {
+      "require": "./bn/bn.cjs",
+      "default": "./bn/bn.js"
+    },
+    "./bn/consts": {
+      "require": "./bn/consts.cjs",
+      "default": "./bn/consts.js"
+    },
+    "./bn/fromHex": {
+      "require": "./bn/fromHex.cjs",
+      "default": "./bn/fromHex.js"
+    },
+    "./bn/max": {
+      "require": "./bn/max.cjs",
+      "default": "./bn/max.js"
+    },
+    "./bn/min": {
+      "require": "./bn/min.cjs",
+      "default": "./bn/min.js"
+    },
+    "./bn/sqrt": {
+      "require": "./bn/sqrt.cjs",
+      "default": "./bn/sqrt.js"
+    },
+    "./bn/toBn": {
+      "require": "./bn/toBn.cjs",
+      "default": "./bn/toBn.js"
+    },
+    "./bn/toHex": {
+      "require": "./bn/toHex.cjs",
+      "default": "./bn/toHex.js"
+    },
+    "./bn/toU8a": {
+      "require": "./bn/toU8a.cjs",
+      "default": "./bn/toU8a.js"
+    },
+    "./bn/util": {
+      "require": "./bn/util.cjs",
+      "default": "./bn/util.js"
+    },
+    "./buffer": {
+      "require": "./buffer/index.cjs",
+      "default": "./buffer/index.js"
+    },
+    "./buffer/toU8a": {
+      "require": "./buffer/toU8a.cjs",
+      "default": "./buffer/toU8a.js"
+    },
+    "./bundle": {
+      "require": "./bundle.cjs",
+      "default": "./bundle.js"
+    },
+    "./compact": {
+      "require": "./compact/index.cjs",
+      "default": "./compact/index.js"
+    },
+    "./compact/addLength": {
+      "require": "./compact/addLength.cjs",
+      "default": "./compact/addLength.js"
+    },
+    "./compact/defaults": {
+      "require": "./compact/defaults.cjs",
+      "default": "./compact/defaults.js"
+    },
+    "./compact/fromU8a": {
+      "require": "./compact/fromU8a.cjs",
+      "default": "./compact/fromU8a.js"
+    },
+    "./compact/stripLength": {
+      "require": "./compact/stripLength.cjs",
+      "default": "./compact/stripLength.js"
+    },
+    "./compact/toU8a": {
+      "require": "./compact/toU8a.cjs",
+      "default": "./compact/toU8a.js"
+    },
+    "./compact/types": {
+      "require": "./compact/types.cjs",
+      "default": "./compact/types.js"
+    },
+    "./detectPackage": {
+      "require": "./detectPackage.cjs",
+      "default": "./detectPackage.js"
+    },
+    "./extractTime": {
+      "require": "./extractTime.cjs",
+      "default": "./extractTime.js"
+    },
+    "./format": {
+      "require": "./format/index.cjs",
+      "default": "./format/index.js"
+    },
+    "./format/formatBalance": {
+      "require": "./format/formatBalance.cjs",
+      "default": "./format/formatBalance.js"
+    },
+    "./format/formatDate": {
+      "require": "./format/formatDate.cjs",
+      "default": "./format/formatDate.js"
+    },
+    "./format/formatDecimal": {
+      "require": "./format/formatDecimal.cjs",
+      "default": "./format/formatDecimal.js"
+    },
+    "./format/formatElapsed": {
+      "require": "./format/formatElapsed.cjs",
+      "default": "./format/formatElapsed.js"
+    },
+    "./format/formatNumber": {
+      "require": "./format/formatNumber.cjs",
+      "default": "./format/formatNumber.js"
+    },
+    "./format/si": {
+      "require": "./format/si.cjs",
+      "default": "./format/si.js"
+    },
+    "./hex": {
+      "require": "./hex/index.cjs",
+      "default": "./hex/index.js"
+    },
+    "./hex/addPrefix": {
+      "require": "./hex/addPrefix.cjs",
+      "default": "./hex/addPrefix.js"
+    },
+    "./hex/fixLength": {
+      "require": "./hex/fixLength.cjs",
+      "default": "./hex/fixLength.js"
+    },
+    "./hex/hasPrefix": {
+      "require": "./hex/hasPrefix.cjs",
+      "default": "./hex/hasPrefix.js"
+    },
+    "./hex/stripPrefix": {
+      "require": "./hex/stripPrefix.cjs",
+      "default": "./hex/stripPrefix.js"
+    },
+    "./hex/toBn": {
+      "require": "./hex/toBn.cjs",
+      "default": "./hex/toBn.js"
+    },
+    "./hex/toNumber": {
+      "require": "./hex/toNumber.cjs",
+      "default": "./hex/toNumber.js"
+    },
+    "./hex/toString": {
+      "require": "./hex/toString.cjs",
+      "default": "./hex/toString.js"
+    },
+    "./hex/toU8a": {
+      "require": "./hex/toU8a.cjs",
+      "default": "./hex/toU8a.js"
+    },
+    "./is": {
+      "require": "./is/index.cjs",
+      "default": "./is/index.js"
+    },
+    "./is/ascii": {
+      "require": "./is/ascii.cjs",
+      "default": "./is/ascii.js"
+    },
+    "./is/bigInt": {
+      "require": "./is/bigInt.cjs",
+      "default": "./is/bigInt.js"
+    },
+    "./is/bn": {
+      "require": "./is/bn.cjs",
+      "default": "./is/bn.js"
+    },
+    "./is/boolean": {
+      "require": "./is/boolean.cjs",
+      "default": "./is/boolean.js"
+    },
+    "./is/buffer": {
+      "require": "./is/buffer.cjs",
+      "default": "./is/buffer.js"
+    },
+    "./is/childClass": {
+      "require": "./is/childClass.cjs",
+      "default": "./is/childClass.js"
+    },
+    "./is/compact": {
+      "require": "./is/compact.cjs",
+      "default": "./is/compact.js"
+    },
+    "./is/error": {
+      "require": "./is/error.cjs",
+      "default": "./is/error.js"
+    },
+    "./is/function": {
+      "require": "./is/function.cjs",
+      "default": "./is/function.js"
+    },
+    "./is/hex": {
+      "require": "./is/hex.cjs",
+      "default": "./is/hex.js"
+    },
+    "./is/instanceOf": {
+      "require": "./is/instanceOf.cjs",
+      "default": "./is/instanceOf.js"
+    },
+    "./is/ip": {
+      "require": "./is/ip.cjs",
+      "default": "./is/ip.js"
+    },
+    "./is/jsonObject": {
+      "require": "./is/jsonObject.cjs",
+      "default": "./is/jsonObject.js"
+    },
+    "./is/null": {
+      "require": "./is/null.cjs",
+      "default": "./is/null.js"
+    },
+    "./is/number": {
+      "require": "./is/number.cjs",
+      "default": "./is/number.js"
+    },
+    "./is/object": {
+      "require": "./is/object.cjs",
+      "default": "./is/object.js"
+    },
+    "./is/observable": {
+      "require": "./is/observable.cjs",
+      "default": "./is/observable.js"
+    },
+    "./is/string": {
+      "require": "./is/string.cjs",
+      "default": "./is/string.js"
+    },
+    "./is/testChain": {
+      "require": "./is/testChain.cjs",
+      "default": "./is/testChain.js"
+    },
+    "./is/toBn": {
+      "require": "./is/toBn.cjs",
+      "default": "./is/toBn.js"
+    },
+    "./is/u8a": {
+      "require": "./is/u8a.cjs",
+      "default": "./is/u8a.js"
+    },
+    "./is/undefined": {
+      "require": "./is/undefined.cjs",
+      "default": "./is/undefined.js"
+    },
+    "./is/utf8": {
+      "require": "./is/utf8.cjs",
+      "default": "./is/utf8.js"
+    },
+    "./is/wasm": {
+      "require": "./is/wasm.cjs",
+      "default": "./is/wasm.js"
+    },
+    "./logger": {
+      "require": "./logger.cjs",
+      "default": "./logger.js"
+    },
+    "./memoize": {
+      "require": "./memoize.cjs",
+      "default": "./memoize.js"
+    },
+    "./number": {
+      "require": "./number/index.cjs",
+      "default": "./number/index.js"
+    },
+    "./number/toHex": {
+      "require": "./number/toHex.cjs",
+      "default": "./number/toHex.js"
+    },
+    "./number/toU8a": {
+      "require": "./number/toU8a.cjs",
+      "default": "./number/toU8a.js"
+    },
+    "./package.json": "./package.json",
+    "./packageInfo": {
+      "require": "./packageInfo.cjs",
+      "default": "./packageInfo.js"
+    },
+    "./promisify": {
+      "require": "./promisify.cjs",
+      "default": "./promisify.js"
+    },
+    "./README.md": "./README.md",
+    "./string": {
+      "require": "./string/index.cjs",
+      "default": "./string/index.js"
+    },
+    "./string/camelCase": {
+      "require": "./string/camelCase.cjs",
+      "default": "./string/camelCase.js"
+    },
+    "./string/lowerFirst": {
+      "require": "./string/lowerFirst.cjs",
+      "default": "./string/lowerFirst.js"
+    },
+    "./string/shorten": {
+      "require": "./string/shorten.cjs",
+      "default": "./string/shorten.js"
+    },
+    "./string/toHex": {
+      "require": "./string/toHex.cjs",
+      "default": "./string/toHex.js"
+    },
+    "./string/toU8a": {
+      "require": "./string/toU8a.cjs",
+      "default": "./string/toU8a.js"
+    },
+    "./string/upperFirst": {
+      "require": "./string/upperFirst.cjs",
+      "default": "./string/upperFirst.js"
+    },
+    "./stringify": {
+      "require": "./stringify.cjs",
+      "default": "./stringify.js"
+    },
+    "./types": {
+      "require": "./types.cjs",
+      "default": "./types.js"
+    },
+    "./u8a": {
+      "require": "./u8a/index.cjs",
+      "default": "./u8a/index.js"
+    },
+    "./u8a/cmp": {
+      "require": "./u8a/cmp.cjs",
+      "default": "./u8a/cmp.js"
+    },
+    "./u8a/concat": {
+      "require": "./u8a/concat.cjs",
+      "default": "./u8a/concat.js"
+    },
+    "./u8a/empty": {
+      "require": "./u8a/empty.cjs",
+      "default": "./u8a/empty.js"
+    },
+    "./u8a/eq": {
+      "require": "./u8a/eq.cjs",
+      "default": "./u8a/eq.js"
+    },
+    "./u8a/fixLength": {
+      "require": "./u8a/fixLength.cjs",
+      "default": "./u8a/fixLength.js"
+    },
+    "./u8a/sorted": {
+      "require": "./u8a/sorted.cjs",
+      "default": "./u8a/sorted.js"
+    },
+    "./u8a/toBn": {
+      "require": "./u8a/toBn.cjs",
+      "default": "./u8a/toBn.js"
+    },
+    "./u8a/toBuffer": {
+      "require": "./u8a/toBuffer.cjs",
+      "default": "./u8a/toBuffer.js"
+    },
+    "./u8a/toHex": {
+      "require": "./u8a/toHex.cjs",
+      "default": "./u8a/toHex.js"
+    },
+    "./u8a/toString": {
+      "require": "./u8a/toString.cjs",
+      "default": "./u8a/toString.js"
+    },
+    "./u8a/toU8a": {
+      "require": "./u8a/toU8a.cjs",
+      "default": "./u8a/toU8a.js"
+    },
+    "./u8a/wrap": {
+      "require": "./u8a/wrap.cjs",
+      "default": "./u8a/wrap.js"
+    },
+    "./versionDetect": {
+      "require": "./versionDetect.cjs",
+      "default": "./versionDetect.js"
+    }
+  }
+}
