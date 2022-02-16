@@ -1,7 +1,7 @@
 // Copyright 2017-2021 @axia-js/keyring authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-// From https://github.com/axctech/axlib/wiki/Secret-URI-Test-Vectors
+// From https://github.com/axiatech/axlib/wiki/Secret-URI-Test-Vectors
 
 import { u8aToHex } from '@axia-js/util';
 import { cryptoWaitReady } from '@axia-js/util-crypto';

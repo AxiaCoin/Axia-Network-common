@@ -17,7 +17,7 @@ var _sshash = require("./sshash.cjs");
 
 // Copyright 2017-2021 @axia-js/util-crypto authors & contributors
 // SPDX-License-Identifier: Apache-2.0
-// Original implementation: https://github.com/axctech/axc-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L34
+// Original implementation: https://github.com/axiatech/axia-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L34
 function encodeAddress(key, ss58Format = _defaults.defaults.prefix) {
   // decode it, this means we can re-encode an address
   const u8a = (0, _decode.decodeAddress)(key);

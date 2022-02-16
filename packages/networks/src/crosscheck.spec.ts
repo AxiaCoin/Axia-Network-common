@@ -11,7 +11,7 @@ import { fetch } from '@axia-js/x-fetch';
 import { allNetworks } from './';
 
 const OUTPUT = './.github/ss58-check.md';
-const AXLIB_REGISTRY = 'https://raw.githubusercontent.com/axctech/axlib/master/ss58-registry.json';
+const AXLIB_REGISTRY = 'https://raw.githubusercontent.com/axiatech/axlib/master/ss58-registry.json';
 
 function assertAndLog (check: boolean, error: string): void {
   if (!check) {

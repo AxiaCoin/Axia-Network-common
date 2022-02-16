@@ -15,7 +15,7 @@ var _defaults = require("./defaults.cjs");
 
 // Copyright 2017-2021 @axia-js/util-crypto authors & contributors
 // SPDX-License-Identifier: Apache-2.0
-// Original implementation: https://github.com/axctech/axc-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
+// Original implementation: https://github.com/axiatech/axia-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
 function decodeAddress(encoded, ignoreChecksum, ss58Format = -1) {
   (0, _util.assert)(encoded, 'Invalid empty address passed');
 

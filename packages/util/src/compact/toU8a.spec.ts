@@ -79,7 +79,7 @@ describe('encode', (): void => {
   });
 
   describe('from Rust', (): void => {
-    // Copied from https://github.com/axctech/axc-codec/blob/master/src/codec.rs
+    // Copied from https://github.com/axiatech/axia-codec/blob/master/src/codec.rs
     const testCases = [
       { expected: '00', value: new BN('0') },
       { expected: 'fc', value: new BN('63') },

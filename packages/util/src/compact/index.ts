@@ -3,7 +3,7 @@
 
 /**
  * @description
- * Encoding and decoding of axc-codec compact numbers. The codec is created
+ * Encoding and decoding of axia-codec compact numbers. The codec is created
  * to take up the least amount of space for a specific number. It performs the
  * same function as Length, however differs in that it uses a variable number of
  * bytes to do the actual encoding. From the Rust implementation for compact

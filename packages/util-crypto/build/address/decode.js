@@ -1,6 +1,6 @@
 // Copyright 2017-2021 @axia-js/util-crypto authors & contributors
 // SPDX-License-Identifier: Apache-2.0
-// Original implementation: https://github.com/axctech/axc-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
+// Original implementation: https://github.com/axiatech/axia-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
 import { assert, isHex, isU8a, u8aToU8a } from '@axia-js/util';
 import { base58Decode } from "../base58/decode.js";
 import { checkAddressChecksum } from "./checksum.js";

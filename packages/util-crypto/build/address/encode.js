@@ -1,6 +1,6 @@
 // Copyright 2017-2021 @axia-js/util-crypto authors & contributors
 // SPDX-License-Identifier: Apache-2.0
-// Original implementation: https://github.com/axctech/axc-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L34
+// Original implementation: https://github.com/axiatech/axia-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L34
 import { assert, u8aConcat } from '@axia-js/util';
 import { base58Encode } from "../base58/encode.js";
 import { decodeAddress } from "./decode.js";

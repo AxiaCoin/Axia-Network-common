@@ -4,7 +4,7 @@
 import type { HexString } from '@axia-js/util/types';
 import type { Prefix } from './types';
 
-// Original implementation: https://github.com/axctech/axc-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
+// Original implementation: https://github.com/axiatech/axia-ui/blob/4858c094684769080f5811f32b081dd7780b0880/src/axia.js#L6
 import { assert, isHex, isU8a, u8aToU8a } from '@axia-js/util';
 
 import { base58Decode } from '../base58/decode';

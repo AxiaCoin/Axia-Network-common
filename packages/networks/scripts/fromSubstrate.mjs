@@ -4,7 +4,7 @@
 import fs from 'fs';
 import fetch from 'node-fetch';
 
-const AXLIB_REGISTRY = 'https://raw.githubusercontent.com/axctech/axlib/master/ss58-registry.json';
+const AXLIB_REGISTRY = 'https://raw.githubusercontent.com/axiatech/axlib/master/ss58-registry.json';
 
 function outputField (v) {
   if (typeof v === 'string') {
